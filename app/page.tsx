@@ -7,6 +7,8 @@ import styled from 'styled-components';
 const Parent = styled.div`
 	background-color: var(--grey-color);
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 
 	.navbar {
 		background-color: var(--white-color);
@@ -53,6 +55,28 @@ const Parent = styled.div`
 			line-height: 25px;
 		}
 	}
+
+	.questions {
+		margin-top: 50px;
+		padding: 0 150px;
+
+		h2 {
+			font-size: var(--subheading-font-size);
+		}
+
+		p {
+			margin-top: 15px;
+			font-size: var(--normal-font-size);
+			line-height: 25px;
+		}
+	}
+
+	.footer {
+		margin-top: 50px;
+		justify-self: flex-end;
+		padding: 25px 50px;
+		border-top: 1px solid var(--white-color);
+	}
 `;
 
 export default function Home() {
@@ -88,6 +112,15 @@ export default function Home() {
 						each subtask including labour cost and provides an estimate of
 						the total project cost.
 					</p>
+				</div>
+				<div className='questions'>
+					<h2>Got questions?</h2>
+					<p>
+						Email <u>info@noobdev54.com</u>.
+					</p>
+				</div>
+				<div className='footer'>
+					<p>Copyright © 2023 All Rights Reserved</p>
 				</div>
 			</Parent>
 		</>
