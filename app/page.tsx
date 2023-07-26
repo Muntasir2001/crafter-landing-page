@@ -19,6 +19,7 @@ const Parent = styled.div`
 		color: var(--black-color);
 		text-align: center;
 		font-size: var(--heading-font-size);
+		padding: 0 50px;
 		padding-top: 130px;
 
 		display: flex;
@@ -76,6 +77,20 @@ const Parent = styled.div`
 		justify-self: flex-end;
 		padding: 25px 50px;
 		border-top: 1px solid var(--white-color);
+	}
+
+	@media screen and (max-width: 1024px) {
+		.about,
+		.questions {
+			padding: 0 100px;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.about,
+		.questions {
+			padding: 0 50px;
+		}
 	}
 `;
 
