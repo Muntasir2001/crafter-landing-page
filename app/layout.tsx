@@ -7,8 +7,8 @@ import StyledComponentsRegistry from '@/lib/registry';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Crafter',
-	description: 'Crafter - WIP',
+	title: 'Projexa',
+	description: 'Projexa - WIP',
 };
 
 export default function RootLayout({
